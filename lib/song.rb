@@ -65,7 +65,7 @@ class Song
     new_song = Song.new
     new_song.artist_name = arr[0]
     new_song.name = arr[1]
-    song
+    new_song
   end
   
   def self.create_from_filename(filename)
