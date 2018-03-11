@@ -11,13 +11,13 @@ class Song
   end
 
 
-  def song.create
+  def self.create
     the_new_song = Song.new
     @@all << the_new_song
     the_new_song
   end
   
-  def new_by_name(song_name)
+  def self.new_by_name(song_name)
     song = Song.new
     song.name = song_name
   end
