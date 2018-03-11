@@ -58,7 +58,7 @@ class Song
     arr = str.split('-')
     
     # SEPARATES MP3 FROM SONG NAME
-    arr[1] = arr[1].split('.')
+    song_name = arr[1].split('.')
     arr[1][0] = ''
     arr[0][-1] = ''
     
