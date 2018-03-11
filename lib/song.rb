@@ -38,7 +38,8 @@ class Song
   
   def self.find_or_create_by_name(song_name)
     if self.find_by_name == nil
-       return self.create_by_name(song_name)   
+       new_song = self.create_by_name(song_name)   
+       return new_song
     else  
        return self.find_by_name  
     end
