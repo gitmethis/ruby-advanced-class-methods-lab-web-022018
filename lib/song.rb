@@ -14,6 +14,8 @@ class Song
   def song.create
     the_new_song = Song.new
     @@all << the_new_song
-    
+    the_new_song
   end
+  
+  
 end
