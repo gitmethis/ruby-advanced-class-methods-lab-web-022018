@@ -58,6 +58,9 @@ class Song
     arr[1].split('.')
     arr[1][0] = ''
     arr[0][-1] = ''
-    p arr
+    
+    new_song = Song.new
+    new_song.artist_name = arr[0]
+    new_song.name = arr[1]
   end
 end
