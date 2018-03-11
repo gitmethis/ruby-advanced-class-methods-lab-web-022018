@@ -64,7 +64,7 @@ class Song
     
     new_song = Song.new
     new_song.artist_name = arr[0]
-    new_song.name = song_name
+    new_song.name = song_name[0]
     new_song
   end
   
