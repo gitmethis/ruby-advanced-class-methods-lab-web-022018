@@ -51,6 +51,13 @@ class Song
   end
   
   def self.new_from_filename()
+    # SEPARATES ARTISTS FROM SONG NAMES
+    arr = str.split('-')
     
+    # SEPARATES MP3 FROM SONG NAME
+    arr[1].split('.')
+    arr[1][0] = ''
+    arr[0][-1] = ''
+    p arr
   end
 end
